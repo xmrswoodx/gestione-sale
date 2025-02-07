@@ -1,0 +1,75 @@
+/* Centra il contenuto principale */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra gli elementi orizzontalmente */
+  justify-content: flex-start; /* Inizia dal top, non centrato verticalmente */
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  overflow: auto; /* Permette lo scorrimento se il contenuto è troppo lungo */
+}
+
+/* Contenitore di ogni sala */
+.room {
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  width: auto;
+  max-width: 80%; /* Limita la larghezza massima */
+  background-color: #f9f9f9;
+}
+
+/* Centra le righe e le poltrone */
+.row {
+  display: flex;
+  justify-content: center; /* Centra le poltrone orizzontalmente */
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+/* Stile per ogni poltrona */
+.seat {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Poltrona verde (disponibile) */
+.seat.green {
+  background-color: #7cb342;
+  color: white;
+}
+
+/* Poltrona rossa (occupata) */
+.seat.red {
+  background-color: #e53935;
+  color: white;
+}
+
+/* Stile per le note */
+.notes {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.notes textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  resize: vertical;
+}
